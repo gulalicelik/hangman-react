@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Hangman {
+  height: 100vh;
+  width: 100vw;
+  color: black;
+  text-align: center;
+  background-color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.Hangman h1 {
+  font-size: 2rem;
+  font-weight: 100;
+  margin-bottom: 0.1em;
+  margin-top: 40px;
+}
+.right {
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  height: 600px;
+
+  padding: 40px;
+}
+.left {
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  height: 600px;
+}
+.Hangman-word {
+  letter-spacing: 1em;
+  margin: 0.4em -1em 0.2em 0;
+  font-size: 2rem;
+  font-weight: 250;
+}
+
+.Hangman-btns {
+  text-align: center;
+  display: inline-block;
+  width: 450px;
+  margin-top: 20px;
+}
+
+.Hangman button {
+  font-size: 19px;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  background-color: #eeeeee;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  color: #3e3e3e;
+  margin: 2px;
+}
+
+#reset {
+  margin-top: 15px;
+  width: 120px;
+  background-color: rgb(187, 187, 187);
+}
+
+.Hangman button:hover {
+  background-color: #3e3e3e;
+  color: rgb(255, 255, 255);
+}
+
+.Hangman button:disabled {
+  background: #bdbdbd;
+  color: #eeeeee;
+}
+.wrong {
+  margin-top: 15px;
+}
+.lose {
+  margin: 20px;
+  font-size: 19px;
+}
+.win {
+  margin: 20px;
+  font-size: 19px;
+}
+.result {
+  margin: 20px;
+  font-size: 19px;
+}
+.result span {
+  font-style: italic;
+}
+
+.wr {
+  color: rgb(232, 97, 97);
+}
+.note {
+  font-size: 15px;
+  font-style: italic;
+  color: #707070;
+  position: absolute;
+  bottom: 10px;
+}
